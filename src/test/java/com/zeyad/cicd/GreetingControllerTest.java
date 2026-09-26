@@ -22,6 +22,6 @@ class GreetingControllerTest {
         mockMvc.perform(get("/api/greeting").param("name", "Zeyad"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.message").value("Hello, Zeyad!"));
+                .andExpect(jsonPath("$.message").value("Hi, Zeyad!"));
     }
 }
