@@ -9,7 +9,7 @@ public class GreetingController {
 
     @GetMapping("/api/greeting")
     public Greeting greeting(@RequestParam(defaultValue = "World") String name) {
-        return new Greeting("Hello, " + name + "!");
+        return new Greeting("Hi, " + name + "!");
     }
 
     public record Greeting(String message) {
