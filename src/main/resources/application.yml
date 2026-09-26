@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cicd-learning-app
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
